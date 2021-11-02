@@ -98,6 +98,10 @@ console.log(addedApps.join("\n"));
     R.curry
 */
 
-// (Exercício 5) Crie um novo arquivo main2.js (baseado no main.js) que seleciona todos as apps adicionadas
+// (Exercício 5) Crie um novo arquivo main2.js (baseado no main.js) que seleciona todos as apps adicionados
 // depois do ano 2000 e atualizadas em 2020. Ao imprimir as apps, além do nome, imprima
 // a data que foi adicionada e a data da última atualização.
+
+/*
+    "main2.js"
+*/
