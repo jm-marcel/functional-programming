@@ -52,6 +52,11 @@ console.log(addedApps.join("\n"));
 // (Exercício 2) Identifique quais funções no projeto possuem efeitos colaterais (side-effects)
 // Adicione um comentário identificando-as
 
+/*
+    No arquivo "xmlfilter.js", a função "getGitHubProject" altera o valor da variável "xmlNode"
+    ao adicionar o complemento "https://github.com/" nos locais onde a String é vazia ("");
+*/
+
 // (Exercício 3) Identifique quais funções são curried
 // Adicione um comentário identificando-as
 
