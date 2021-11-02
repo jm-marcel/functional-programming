@@ -66,7 +66,27 @@ console.log(addedApps.join("\n"));
 // Adicione um comentário identificando-as
 
 /*
-    
+    As funções curried são:
+
+    (
+        const contentOfTag = R.curry(
+            (xmlNode, tagName) => xmlNode.getElementsByTagName(tagName)[0].textContent
+        );
+    ) e
+    (
+        const isValid = R.curry((app, addedAfterYear, updatedAfterYear) => {
+            if (!contentOfSource(app).includes("github.com")) return false;
+        
+            const addedDate = new Date(contentOfAdded(app));
+            if (addedDate.getFullYear() < addedAfterYear) return false;
+
+            const lastUpdatedDate = new Date(contentOfUpdated(app));
+            if (lastUpdatedDate.getFullYear() < updatedAfterYear) return false;
+
+            return true;
+        });
+    ).
+
 */
 
 // (Exercício 4) Identifique quais funções são high-order
