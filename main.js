@@ -21,8 +21,13 @@ console.log(addedApps.join("\n"));
 // Adicione um comentário identificando-as
 
 /*
-    Na linha 5, do arquivo "main.js", há uma declaração de variável composta por 2 CHAMADAS de 
-    Funções e um RETORNO, as funções são DECLARADAS no arquivo "xmlfilter.js" nas linhas 11 
+    Na linha 5, do arquivo "main.js", há uma declaração de variável composta por 3 CHAMADAS de 
+    Funções, que são DECLARADAS no arquivo "xmlfilter.js" nas linhas 3
+    (
+        const contentOfTag = R.curry(
+            (xmlNode, tagName) => xmlNode.getElementsByTagName(tagName)[0].textContent
+        );
+    ), 11 
     (
         const getGitHubProject = (xmlNode) =>
         contentOfSource(xmlNode).replace("https://github.com/", "");
@@ -59,6 +64,10 @@ console.log(addedApps.join("\n"));
 
 // (Exercício 3) Identifique quais funções são curried
 // Adicione um comentário identificando-as
+
+/*
+    
+*/
 
 // (Exercício 4) Identifique quais funções são high-order
 // Adicione um comentário identificando-as
